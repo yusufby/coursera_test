@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello Coursera!</title>
+	<link rel="stylesheet" title="text/css" href="styles.css">
+
+</head>
+<body>
+<img src="tiger.png" alt="tiger picture" id="tiger">
+<h2>This is a famous tiger in Africa </h2>
+<h1 id="title">Hello Coursera this  </h1>
+<p>Lemurs &emsp; &nbsp; are primates found exclusively in the isolated
+     island of Madagascar. Lemurs are primates just like apes and monkeys,
+     but they evolved independently and are unique. The numbers of lemurs are
+     dwindling due to poaching and other destructive human activities. Lemurs
+     are worth more than $2 Trillion. In fact, no amount of money can ever
+     buy one. So,&nbsp; &nbsp; protect lemurs!</p>
+School subjects
+<ol> 
+<li class="maths">Maths</li>
+<li>turkish</li>
+<li>P.E</li>
+<li>Music <ol> 
+	<li>Piano</li>
+	<li>Saz</li>
+	<li>Recorder</li>
+	<li>Ney</li></ol>
+</li></ol>
+<p>[MUSIC] Links pretty much what makes the web what it is. In this lecture, we're going to take a look at different types of links and how you could create them in your HTML page. So the first type of links that we're going to take a look at are internal links. Here I am looking at the file called links-internal.html, and it's located in the examples/Lecture09 folder. And here we have a couple of links we're going to take a look at. Now the way you create links is by specifying an a element with an attribute href. And href stands for hypertext reference. The value of href can either be a relative or an absolute URL. In our case here, since we're discussing internal links which are links that point to internal web pages of the where application, the links we're showing are all relative URL links. However we could still have an even absolute URL links as long as they point, again, to the same web application that we're in. Since we're providing no directory information, the browser will assume that same-directory.html is a file that lives in the same directory as links-internal.html. It's also a very good idea to always specify a title attribute for the a tag. The title attribute is used by the screen readers that help the visually impaired people get through the web page. The content in between the opening and closing a tags is the content you're going to see in the web page, when it is served and on which you're going to be able to click to go to the href that the a tag is configured with. Note the second example of our a tag. In this example, we're surrounding a div tag with our anchor tag. In other words, this div tag is going to be the content over our link on which were going to be able to click. Let's go ahead and see what this look like in the browser?
+Play video starting at :2:1 and follow transcript2:01
+Okay. So, here is our internal links page, and we have a couple of links. One it says linking to a file in the same directory, and the one is the DIV. That's the a tag surrounding the div tag that says DIV linking to a file in the same directory. And if we click that, we're going to go to this same-directory.html page which basically just provides a link back to our original page. What's interesting to note here is that the first link, linking to a file in the same directory, is clearly an inline tag since it's not forcing itself to go to a new line. But yet in the second case, div linking to a file in the same directory, we're surrounding the div tag with our a tag. So what's going on here? Are we using block level element, the div, inside an inline element? Well, turns out things are little bit more interesting. Let's take a look at the a tag as defined in the W3C specification. If you take a look closely, the a tag is both a flow content and a phrasing content. In other words, to map it back to the HTML four days, the a tag in the HTML5 is both an inline element and a block level element at the same time. And this is what allows us to take the a tag and surround a div tag inside of it. The authors of the HTML5 specification realized that there are a lot of times where you would like to be able to click on a whole region. And a most common occurrence of that is on when you have a logo or some sort of a company name in the top left corner for example, of your webpage. People expect to be able to click on that and be able to go to the front page of the company. Prior to HTML5, people had to use all kinds of tricks in order to achieve that effect because the a tag was only an inline tag, and you weren't really able to wrap the a tag around the div tag.
+Play video starting at :3:57 and follow transcript3:57
+Next, let's take a look at an example of an external link. Here we are in Sublime Text again and looking at the file called links-external.html which is again located in the examples/ Lecture09 folder.
+Play video starting at :4:13 and follow transcript4:13
+And this document basically contains just a single link. There's really nothing super special about external links other that their href value usually starts with http:// because it's usually the case that external links are hosted on a different domain name than your website. However, there's one feature of the a element that I would like to demonstrate that is quite often used in conjunction with external links. And that is the target attribute. Target attribute, when it's set to the value _blank, forces the browser to open this page in a new tab or a new window. The reason that's advantageous is because nowadays unfortunately people have a very short attention span, and if you take them from your website to a different website, it is a very good chance that they will never come back to your site. And usually you don't want them to leave your site completely. So target="_blank" is very useful in that regard. Let's a take a look at this page in the browser.
+Play video starting at :5:23 and follow transcript5:23
+And here's the page in the browser. And if we click this link, Coursera Facebook Page, it will open a new tab and will load the Facebook page pointed to by that link. Coincidentally, this is a Facebook page I created for the two courses I'm teaching on Coursera which is at facebook.com/CourseraWebDev. So please like this page, and follow it as I'll be posting some optional but interesting and relevant material. Another type of link that is extremely important to know about is a fragment identifier. So here I'm in again in Sublime Text in links-same- </p>
+
+<a href="#title">Back to top </a>
+</body>
+</html>
+

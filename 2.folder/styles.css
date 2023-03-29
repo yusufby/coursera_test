@@ -1,0 +1,13 @@
+body{
+	text-align: center;
+	
+}
+
+#title{
+	
+	color: darkred;
+	border: 3px dotted darkgrey;
+	width: 500px;
+	background-color: greenyellow;
+	border-radius: 5px;
+}
